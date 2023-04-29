@@ -408,10 +408,6 @@ img{
 
 }
 
-.quest-lst-btn ul{
-    list-style-type:  none;
-}
-
 
 .quest-lst-btn {
     font-size: 1.25rem;
@@ -444,6 +440,18 @@ img{
     color: #fff;
 }
 
+.panel{
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    display: none;
+}
+.panel a{
+    text-decoration: none;
+}
+.panel a:hover{
+    color: #fff;
+}
 
 /* Footer */
 

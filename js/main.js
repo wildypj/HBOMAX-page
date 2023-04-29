@@ -1,15 +1,15 @@
+const questBtn = document.querySelectorAll('.accordion');
 
-const questSubText = document.querySelector('.quest-sub-txt');
-const questBtn = document.querySelectorAll('.lst-btn li button');
+questBtn.forEach(button => button.addEventListener('click', showHidePanel))
 
-console.log(questBtn);
+function showHidePanel(){
+    this.classList.toggle("active");
 
- 
-//  listen for Question Button Click
-questBtn.forEach(button => button.addEventListener('click', closeTexts));
-
-
-function closeText() {
-
-    questSubText.style.display="none";
+    var panel = this.nextElementSibling;
+    if(panel.style.display === "block"){
+        panel.style.display = "none";
+    } else{
+        panel.style.display = "block";
+    }
 }
+
